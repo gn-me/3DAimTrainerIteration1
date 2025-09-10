@@ -1,0 +1,150 @@
+<!--Created by Alexander Pen
+this is the html file for the website-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Aim Trainer</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  
+  <!-- Menu -->
+  <div id="menu">
+    <h1>3D Aim Trainer</h1>
+    <button id="libraryBtn">Training Library</button>
+    <button id="statsBtn">Stats</button>
+    <button id="settingsBtn">Settings</button>
+    <button id="loginBtn">Login</button>
+    <button id="signUpBtn">Sign Up</button>
+  </div>
+
+
+
+
+
+  <!-- Training Library -->
+  <div id="library">
+    <div id="closeLibrary" class="closeDiv">
+      <h1> Training Library </h1>
+      <button id="closeLibraryBtn" class="closeBtn">←</button>
+    </div>
+    <div id="libraryOptions">
+      <div id="skillsOptions" class="libraryOption">
+        <h1>Skills</h1>
+
+        <div class="optionDiv">
+          <h2>Accuracy</h2>
+          <div id="accuracyModes" class="modeOptions">
+
+            <div id="staticMode" class="modeOption">
+              <h3>Static</h3>
+              <button id="staticEasy">Easy</button>
+              <button id="staticMedium">Medium</button>
+              <button id="staticHard">Hard</button>
+            </div>
+
+            <div id="dynamicMode" class="modeOption">
+              <h3>Dynamic</h3>
+              <button id="dynamicEasy">Easy</button>
+              <button id="dynamicMedium">Medium</button>
+              <button id="dynamicHard">Hard</button>
+            </div>
+          </div>
+        </div>  
+
+        <div class="optionDiv">
+          <h2>Flicking</h2>
+        </div>
+
+        <div class="optionDiv">
+          <h2>Tracking</h2>
+        </div>
+      </div>   
+
+      <div id="scenarioOptions" class="libraryOption">
+        <h1>Scenarios</h1>
+
+        <div class="optionDiv">
+          <h2>Room Clearing</h2>
+          <button id="roomClearingBtn">Start</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- settings -->
+  <div id="settings">
+    <div id="closeSettings" class="closeDiv">
+      <h1> Settings </h1>
+      <button id="closeSettingsBtn" class="closeBtn">←</button>
+    </div>
+    <div id="settingsOptions">
+      <div id="crosshairCustomisation">
+        <div id="crosshairOptions">
+          <h1>Crosshair Customisation</h1>
+          <div id="crosshairColour">
+            <h2>Colour</h2>
+            <input type="color" id="crosshairColourInput" value="#ffffff">
+          </div>
+
+          <div id="crosshairSize">
+            <h2>Size</h2>
+            <input type="range" id="crosshairSizeInput" min="10" max="100" value="50">
+          </div>
+
+          <div id="crosshairPresets">
+            <h2>Presets</h2>
+            <button class="presetBtn" id="defaultPreset">+</button>
+            <button class="presetBtn" id="dotPreset">•</button>
+          </div>
+
+        </div>
+        
+        <div id="crosshairPreviewArea">
+          <h2>Preview</h2>
+          <div id="crosshairPreviewBox">
+            <div id="crosshairPreview">+</div>
+          </div>
+        </div>
+
+        <div id="instructions">
+          <h2>Instructions</h2>
+          <p>Use the colour picker to select a custom colour for your crosshair.
+              Use the size slider to adjust the size of your crosshair.
+              Click on a preset button to quickly set your crosshair to a predefined style.
+              Then click save to apply to the real crosshair.</p>
+        </div>
+
+        <div id="saveCrosshairOptions">
+          <button id="saveCrosshairBtn" class="saveBtn">Save</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills Score Screen -->
+  <div id="score">
+    <div id="closeScore" class="closeDiv">
+      <h1> Stats </h1>
+      <button id="closeScoreBtn" class="closeBtn">←</button>
+    </div>
+
+    <div id="ScoreOptions">
+      <h2>Overall Accuracy: <span id="overallAccuracy">0%</span></h2>
+      <h2>Total Targets Hit: <span id="totalTargetsHit">0</span></h2>
+      <h2>Total Shots Fired: <span id="totalShotsFired">0</span></h2>
+      <h2>Total Time Played: <span id="totalTimePlayed">0s</span></h2>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script type="module" src="/src/main.js"></script>
+  <div id="game-canvas"></div>
+  <div id="crosshair">+</div>
+</body>
+</html>
