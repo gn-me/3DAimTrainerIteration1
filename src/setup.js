@@ -1,7 +1,7 @@
 /* Created by Alexander Pen
 this is the setup file this code sets up the scene camera and renderer so the game can be seen */
 
-import * as THREE from 'three'; // Import the entire THREE namespace
+import * as THREE from './three.module.js'; // Import the entire THREE namespace
 
 export function setupScene() {
   const scene = new THREE.Scene(); // Create a new scene

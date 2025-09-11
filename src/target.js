@@ -1,6 +1,6 @@
 /* Created by Alexander Pen
 this is the target file - it will contain all the target classes and their functions. */
-import * as THREE from 'three'; 
+import * as THREE from './three.module.js'; 
 
 export class Target {
   constructor(pos, radius = 1, color = 0xFF0000, speed = 0) { // default red sphere target

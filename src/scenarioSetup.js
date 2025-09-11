@@ -1,6 +1,6 @@
 /* Created by Alexander Pen
 this is the file for the setup of the scenatio gamemode*/
-import * as THREE from 'three'; // Importing the Three.js library
+import * as THREE from './three.module.js'; // Importing the Three.js library
 
 const wallBoxes = []; // global array for this file that contains all the wall boxes for collision detection
 
