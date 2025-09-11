@@ -1,6 +1,6 @@
 /* Created by Alexander Pen
 this is the main file that the code runs from */
-import * as THREE from './three.module.js'; // Importing the Three.js library
+import * as THREE from 'https://unpkg.com/three@0.168.0/build/three.module.js'; // Importing the Three.js library
 import { setupScene } from './setup.js'; // Importing all js files for better organization
 import { mouseSetup } from './mouseControls.js';
 import { worldSetup, addLight, addSkillWalls, removeAllWalls } from './worldSetup.js';

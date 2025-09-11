@@ -1,6 +1,6 @@
 /* Created by Alexander Pen
 this is the worldsetup file this code sets up the world that the user sees */
-import * as THREE from './three.module.js'; // Import the entire THREE namespace
+import * as THREE from 'https://unpkg.com/three@0.168.0/build/three.module.js'; // Import the entire THREE namespace
 export function worldSetup(scene) { // setup the world the player sees
   const floorGeometry = new THREE.PlaneGeometry(500, 500); // large plane for the floor
   const floorMaterial = new THREE.MeshBasicMaterial({ 
